@@ -11,20 +11,6 @@
 
         The function returns true if the formula returns true for any of these circle-pairs.
 
-        See here for more information
-        http://paulbourke.net/geometry/circlesphere/
-
-        :param ax: numpy float array
-        :param ay: numpy float array
-        :param az: numpy float array
-        :param bx: numpy float array
-        :param by: numpy float array
-        :param bz: numpy float array
-        :param ar: numpy float array
-        :param br: numpy float array
-        :return: bool
-        """
-
         return np.any((ar + br) ** 2 >= np.power((ax - bx), 2) + np.power((ay - by), 2) + np.power((az - bz), 2))
 
     def is_trajectory_intersecting(at, bt, start_time, end_time):
