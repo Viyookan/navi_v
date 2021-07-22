@@ -1,15 +1,5 @@
 
-else:
-    def format_region_tuple(region):
-        """
-        This function takes in a DiscreteSpaceTimeRegion and returns the appropriate format for trajectory related
-        computations
 
-        :param region: DiscreteSpaceTimeRegion
-        :return: region tuple (t, x, y, z, s)
-        """
-        centre, time, shape, cost = region.to_tuple()
-        return time, centre.x, centre.y, centre.z, shape.get("params")
 
     def is_region_intersecting(ax, ay, az, ar, bx, by, bz, br):
         """
